@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.example.admin.testapp_52.Main4Activity">
+
+    <ListView
+        android:id="@+id/xk"
+        android:layout_width="match_parent"
+        app:layout_heightPercent="85%"
+
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/xk"
+        android:text="学科\n数据来源：最好大学网 2018.3 "
+        app:layout_heightPercent="15%"
+        />
+
+</android.support.percent.PercentRelativeLayout>
