@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.testapp_52.MainActivity">
+
+    <AutoCompleteTextView
+        android:id="@+id/ser"
+        android:layout_height="wrap_content"
+        app:layout_marginTopPercent="10%"
+        app:layout_widthPercent="80%" />
+     <Button
+         android:id="@+id/btn1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         app:layout_marginTopPercent="10%"
+         android:layout_toRightOf="@+id/ser"
+         android:text="GOTO"
+         />
+
+    <ListView
+        android:id="@+id/li"
+        android:layout_below="@+id/ser"
+        android:layout_width="wrap_content"
+        app:layout_heightPercent="60%"
+
+        />
+      <Button
+          android:id="@+id/zh"
+          android:text="综合"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/li"
+          app:layout_widthPercent="33%"
+
+          />
+    <Button
+        android:id="@+id/shsy"
+        android:text="社会声誉"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/li"
+        android:layout_toRightOf="@+id/zh"
+        app:layout_widthPercent="33%"
+
+        />
+    <Button
+        android:id="@+id/xk"
+        android:text="学科"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/li"
+        android:layout_toRightOf="@+id/shsy"
+        app:layout_widthPercent="33%"
+
+        />
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_below="@+id/zh"
+    android:text="数据来源：最好大学网 2018.3 "
+    app:layout_heightPercent="10%"
+    />
+
+
+
+
+
+</android.support.percent.PercentRelativeLayout>
